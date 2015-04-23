@@ -1,0 +1,278 @@
+\documentclass[A4paper, twocolumn]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage[style=alphabetic,backend=biber]{biblatex}
+\usepackage{multirow}
+\usepackage[table]{xcolor} 
+
+\newcommand{\trans}[2]{{#1}\tiny (#2) \normalsize}
+
+\newcommand{\mysection}[1]
+{
+\section*{#1}
+\addcontentsline{toc}{section}{#1}
+}
+\newcommand{\mysubsection}[1]
+{
+\subsection*{#1}
+\addcontentsline{toc}{subsection}{#1}
+}
+\newcommand{\mysubsubsection}[1]
+{
+\subsubsection*{#1}
+\addcontentsline{toc}{subsubsection}{#1}
+}
+
+\makeindex
+\begin{document}
+\twocolumn[\tableofcontents]
+\section*{Paladin}
+%\mysubsection{The Cause of Righteousness}
+%\mysubsection{Beyond the Mundane Life}
+%\mysubsection{Createing a Paladin}
+%\subsubsection*{Quick Build}
+\rowcolors{2}{gray!25}{white}
+\begin{table*}[t]
+\begin{tabular}{c c l | c c c c c}
+\multicolumn{3}{l}{Fertigkeiten} & \multicolumn{5}{c}{Zauberslots je Level}\\
+\hline
+Level 	& Bonus & Eigenschaften 									& L1 & L2 & L3 & L4 & L5 \\
+\hline
+1.		& +2		& Göttlicher Sinn, Händeauflegen					& - & - & - & - & - \\
+2.		& +2		& Kampfstil, Zauber wirken, Göttlicher Schlag	& 2 & - & - & - & - \\
+3.		& +2		& Göttliche Gesundheit, Heilger Schwur			& 3 & - & - & - & - \\
+4.		& +2		& Fähigkeitspunkte Verbessern					& 3 & - & - & - & - \\
+5.		& +3		& Zusätzliche Attacke							& 4 & 2 & - & - & - \\
+6.		& +3		& Aura des Schutzes								& 4 & 2 & - & - & - \\
+7.		& +3		& Heilger Schwur Fertigkeit						& 4 & 3 & - & - & - \\
+8.		& +3		& Fähigkeitspunkte Verbessern					& 4 & 3 & - & - & - \\
+9.		& +4		& -												& 4 & 3 & 2 & - & - \\
+10.		& +4		& Aura der Tapferkeit							& 4 & 3 & 2 & - & - \\
+11.		& +4		& Verbesserter Göttlicher Schlag					& 4 & 3 & 3 & - & - \\
+12.		& +4		& Fähigkeitspunkte Verbessern					& 4 & 3 & 3 & - & - \\
+13.		& +5		& -												& 4 & 3 & 3 & 1 & - \\
+14.		& +5		& Reinigende Berührung							& 4 & 3 & 3 & 1 & - \\
+15.		& +5		& Heilger Schwur Fertigkeit						& 4 & 3 & 3 & 2 & - \\
+16.		& +5		& Fähigkeitspunkte Verbessern					& 4 & 3 & 3 & 2 & - \\
+17.		& +6		& -												& 4 & 3 & 3 & 3 & 1 \\
+18.		& +6		& Aura Verbesserung								& 4 & 3 & 3 & 3 & 1 \\
+19.		& +6		& Fähigkeitspunkte Verbessern					& 4 & 3 & 3 & 3 & 2 \\
+20.		& +6		& Heilger Schwur Fertigkeit						& 4 & 3 & 3 & 3 & 2 \\
+\end{tabular}
+\caption{Paladintabelle}
+\end{table*}
+\mysection{Class Features}
+Als Paladin erhälst du folgende Klassen Eigenschaften.
+\mysubsubsection{\trans{Lebenspunkte}{Hitpoints}}
+\textbf{Hit Dice:} 1w10 je Level \\
+\textbf{Hit Points auf Level 1:} 10 + Konstitutionsbonus \\
+\textbf{Hit Points auf höheren Leveln:} 1w10 (oder 6) + Konstitutionsbonus pro Level über Level 1
+\mysubsubsection{\trans{Fertigkeiten}{Proficiencies}}
+\textbf{Rüstung:} Alle Rüstungen, Schilde \\
+\textbf{Waffen:} \trans{Einfache Waffen}{simple weapons}, \trans{Kriegswaffen}{martial} \\
+\textbf{Zubehör:} Keine \\
+\textbf{Rettungswürfe:} Weisheit, Charisma \\
+\textbf{Kenntnisse:} Wähle 2 aus \trans{Athletik}{Athletics}, \trans{Einblick}{Insight}, \trans{Einschüchterung}{Intimidation}, \trans{Medizin}{Medicine}, \trans{Überzeugung}{Persuasion}, \trans{Religion}{Religion}
+\mysubsubsection{\trans{Ausrüstung}{Equipment}}
+Du startest mit der folgenden Ausrüstung, und zusätzlich der Ausrüstung die du durch deinen Hintergrund erhälst:
+\begin{itemize}
+\item (a) eine \trans{Kriegswaffe}{martial weapon} und ein Schild oder (b) zwei \trans{Kriegswaffen}{martial weapons}
+\item (a) fünf \trans{Speeren}{javelins} oder (b) einer \trans{Einfachen Waffe}{simple weapon}
+\item (a) einem \trans{Priesterzubehör}{priest's pack} oder einem \trans{Entdeckerzubehör} {explorer's pack}
+\item \trans{Kettenpanzer}{chain mail} und einem heiligen Symbol
+\end{itemize}
+\mysubsection{\trans{Göttlicher Sinn}{Divine Sense}}
+Bis zum Ende deines nächsten Zuges nimmst du die Position aller \trans{himmlischen}{celestial}, \trans{teuflischen}{fiend} oder \trans{untoten}{undead} Wesen war, die sich innerhalb von 20m (60 Fuß) und nicht in \trans{voller Deckung}{total cover} befinden. Du erkennst den Typ (\trans{himmlischen}{celestial}, \trans{teuflischen}{fiend} und \trans{untoten}{undead}) aller Wesen die sich in deiner Umgebung befinden, jedoch nicht ihre Identität.
+
+Im selben Radius erkennst du die Präsenz aller Orte und Objekte die mit dem weihen \trans{Zauber}{hallow} geweiht oder entweiht wurden.
+
+Du kannst diese Fähigkeit so oft verwenden wie dein Charismabonus +1 angibt. Nach einer langen Rast erhältst du alle Verwendungen zurück.
+\mysubsection{\trans{Händeauflegen}{Lay on Hands}}
+Du besitzt einen Pool der Heilung der sich nach jeder langen Rast wieder auffüllt. Mit diesem Pool kannst du 5x dein Paladinlevel an Hit points wiederherstellen.
+
+Als Aktion kannst du eine Kreatur berühren und ihre Hit points mit deinem Pool wiederherstellen, bis zum maximum deines aktuellen Pools.
+
+Alternativ kannst du 5 Hit points aus deinem Pool verwenden um eine Krankheit zu heilen oder ein Gift zu neutralisieren. Du kannst verschiedene Krankheiten heilen und verschiedene Gifte neutralisieren mit einem einzigen Händeauflegen, jedoch verbraucht jedes separat deinen Pool.
+
+Diese Fähigkeit hat keinen effekt auf \trans{Untote}{undead} und \trans{Konstrukte}{constructs}
+\mysubsection{\trans{Kampfstil}{Fighting Style}}
+Ab Level 2 wählst du einen Kampfstil als Spezialität. Wähle eine der folgenden Optionen. Du kannst jeden Kampfstil nur einmal wählen auch wenn du zu einem späteren Zeitpunkt erneut einen auswählen sollst.
+\mysubsubsection{\trans{Verteidigung}{Defense}}
+Solange du eine Rüstung trägst erhältst du einen Rüstungsbonus von +1.
+\mysubsubsection{\trans{Zweikampf }{Dueling}}
+Wenn du eine Nahkampfwaffe in einer Hand führst und keine andere Waffe außer dieser, erhältst du einen +2 Bomus für Schadenswürfe.
+\mysubsubsection{\trans{Zweihänderkampf}{Great Weapon Fighting}}
+Wenn du eine 1 oder eine 2 mit einem Schadenswürfel für zweihand Nahkampfwaffen würfelst, kannst du diesen erneut würfeln und musst das neue Ergebnis verwenden. Die Waffe muss die \trans{Zweihand}{two-handed} oder die \trans{Vielseitig}{versatile} Eigenschaft haben.
+\mysubsubsection{\trans{Schutz}{Protection}}
+Wenn eine Kreatur innerhalb von \trans{1,6m}{5 feet} die du sehen kannst eine andere als dich angreift, kannst du deine Reaktion verwenden um einen \trans{Nachteil}{disadvantage} aufzuzwingen.\\Du musst hierfür ein Schild tragen.
+\mysubsection{\trans{Zauber wirken}{Spellcasting}}
+Ab Level 2 erhälst du die Fähigkeit Zauber zu wirken. Siehe Kapitel 10 für die genauen Regeln und Kapitel 11 für die Paladin Zauberliste.
+\mysubsubsection{\trans{Zauber vorbereiten und wirken}{Preparing and Casting Spells}}
+Die Paladintabelle zeigt wie viele Zauber je Zauberlevel du wirken kannst. Um einen Zauber zu wirken verbrauchst du einen Zauberslot der dem Level des Zaubers entspricht. Möchtest du einen Zauber auf höherem Level Zaubern als angeben verbrauchst du auch den entsprechend höheren Zauberslot. Du erhältst alle verbrauchten Zauberslots nach einer langen Rast zurück.
+
+Deine Zauber müssen vorbereitet werden. Hierzu wählst du eine Liste von Paladinzaubern aus der Paladinzauberliste. Die Menge die du wählen kannst entspricht deinem Charismabonus + die Hälfte deines Paladinlevels (abrunden, min 1). Du kannst keine Zauber wählen für die du keine passenden Zauberslots hast. Einen Zauber zu wirken entfernt diesen nicht aus der Liste der vorbereiteten Zauber.
+
+Du kannst die Liste der vorbereiteten Zauber nach jeder langen Rast bearbeiten. Eine neue Liste vorzubereiten, braucht Zeit für Gebete und Meditation. Min 1 minute je Zauberlevel für jeden Zauber.
+\mysubsubsection{\trans{Zauberfähigkeit}{Spellcasting Ability}}
+Charisma ist die Zauberfähigkeit für deine Paladinzauber, da sich ihre Macht aus deiner Überzeugungskraft ableitet. Benutze dein Charisma immer dann wenn ein Zauber sich auf deine Zauberfähigkeit bezieht. Zusätzlich benutzt du deinen Charismabonus um die Rettungswurf Schwierigkeit deiner Zauber zu bestimmen oder wenn du einen Angriffswurf mit einem Zauber machst.
+\\\\
+\textbf{Zauber Rettungswurf Schwierigkeit} = 8 + Fertigkeitsbonus + Charismabonus\\
+\textbf{Zauber Angriffsbonus} = Fertigkeitsbonus + Charismabonus
+\mysubsubsection{\trans{Zauber Fokus}{Spellcasting Focus}}
+Du kannst ein Heiliges Symbol als Zauberfokus verwenden. (s. Kap. 5)
+\mysubsection{\trans{Göttlicher Schlag}{Divine Smite}}
+Ab Level 2 kannst du bei einem Nahkampfangriff einen Zauberslot verbrauchen, um zusätzlichen \trans{Lichtschaden}{radiant} zu verursachen. Der zusätzliche Schaden beträgt 1w8 + 1w8 je Zauberslotlevel der verwendet wurde bis zu einem maximum von 5w8. Der Schaden erhöht sich um 1w8 wenn das Ziel \trans{untot}{undead} oder \trans{teuflisch}{fiend} ist.
+\mysubsection{\trans{Göttliche Gesundheit}{Divine Health}}
+Ab Level 3 durchströmt dich göttliche Magie, die dich immun gegen Krankheiten macht.
+\mysubsection{\trans{Heiliger Schwur}{Sacred Oath}}
+Wenn du Level 3 erreicht hast legst du einen Schwur ab der dich für immer bindet. Bis dahin warst du in einer Vorbereitungsphase, verbunden mit dem Pfad jedoch hast du noch keinen Schwur geleistet. Nun wählst du den \trans{Schwur der Hingabe}{Oath of Devotion}, den\trans{Schwur der Alten}{Oath of the Ancients} oder den \trans{Schwur der Vergeltung}{Oath of Vengeance}.
+
+Deine Wahl gestattet dir auf Level 3, Level 7, Level 15 und Level 20 neue Fertigkeiten zu erlernen. Dies beinhaltet \trans{Schwurzauber}{Oath spells} und \trans{Gelenkte Göttlichkeiten}{Channel Divinity}.
+\mysubsubsection{\trans{Seinen Schwur brechen}{Breaking your Oath}}
+Ein Paladin der seinen Schwur bricht, sucht normalerweise nach Absolution bei einem Kleriker mit dem selben Glauben innerhalb seines Ordens. Der Paladin könnte einer schlaflosen Nacht Gebete als Zeichen der Buße sprechen oder sich zu einer Fast oder eine ähnliche Entsagung verpflichten. Nach einem Ritus des Geständnis und Vergebung, ist der Paladin schuld befreit und kann seinen Tätigkeit wieder aufnehmen.
+
+Wenn ein Paladin bewusst seinen Schwur bricht und keine Reue zeigt, könnte es zu ernsthaften Konsequenzen kommen. Nach dem Ermessen des Meisters kann ein reueloser Paladin gezwungen werden seine Klasse aufzugeben und eine neue anzunehmen oder die Schwurbrecher Option aus dem Dungeons Master's Guide zu wählen.
+\mysubsubsection{\trans{Schwurzauber}{Oath Spells}}
+Jeder Schwur hat eine zugehörige Liste von Zaubern. Du erhälst Zugang zu diesen Zaubern wie es in der Schwurbeschreibung angegeben ist. Wenn du Zugang zu einem Zauber erhältst ist dieser automatisch immer vorbereitet und zählt nicht zu der Menge an vorbereiteten Zaubern hinzu.
+
+Wenn du einen Schwurzauber erhälst der nicht in der Paladinzauber liste steht, zählt dieser trotzdem als Paladinzauber den du wirken kannst.
+\mysubsubsection{\trans{Gelenkte Göttlichkeiten}{Channel Divinity}}
+Dein Schwur erlaubt es dir göttliche Energie zu lenken um magische Effekte zu erzeugen. Jede Gelenkte Göttlichkeit Option deines Schwurs erklärt selber wie diese anzuwenden ist.
+
+Wenn du eine gelenkte Göttlichkeit verwenden willst, suchst du dir eine deines Schwures heraus und verwendest diese. Erst nach einer kurzen oder langen Rast kannst du erneut deine Gelenkte Göttlichkeit einsetzen.
+
+Einige Effekte der gelenkte Göttlichkeiten verlangen einen Rettungswurf. Wenn du einen solchen Effekt verwendest, verwende die Zauber Rettungswurf Schwierigkeit deines Paladins.
+\mysubsection{\trans{Fähigkeitspunkte verbessern}{Ability Score Improvement}}
+Wenn du Level 4 erreichst sowie Level 8, Level 12, Level 16 und Level 19, kannst du 2 Fähigkeitspunkte beliebig auf deine Fähigkeiten verteilen. Das Maximum liegt hierbei bei 20.
+\mysubsection{\trans{Zusätzliche Attacke}{Extra Attack}}
+Mit Level 5 erhältst du eine zweite Attacke wenn du die Angriffsaktion in deiner Runde wählst.
+\mysubsection{\trans{Aura des Schutzes}{Aura of Protection}}
+Ab Level 6, immer wenn du oder eine befreundete Kreatur in  \trans{3,3m}{10 feet} Reichweite einen Rettungswurf machen muss, erhält einen Bonus in höhe deines Charismabonus (Min +1). Hierzu musst du bei Bewusstsein sein.
+
+Auf Level 18 erhöht sich die Reichweite auf  \trans{10m}{30 feet}.
+\mysubsection{\trans{Aura der Tapferkeit}{Aura of Courage}}
+Ab Level 10 du und befreundete Kreaturen in \trans{3,3m}{10 feet} Reichweite können nicht mehr \trans{verängstigt}{frightened} werden solange du bei Bewusstsein bist.
+
+Auf Level 18 erhöht sich die Reichweite auf \trans{10m}{30 feet}.
+\mysubsection{\trans{Verbesserter Göttlicher Schlag}{Improved Devine Smite}}
+Auf Level 11 bist du so erfüllt von Rechenschaft das all deine Nahkampfangriffe eine göttliche Kraft beinhalten. Immer wenn du eine Kreatur mit einer Nahkampfwaffe triffst, verursachst du 1w8 zusätzlichen Lichtschaden. Wenn du den Göttlichen Schlag zusätzlich verwendest fügst du diesen Zusätzlichen Schaden dem zusätzlichen Schaden des Göttlichen Schlags hinzu.
+\mysubsection{\trans{Reinigende Berührung}{Cleansing Touch}}
+Ab Level 14 kannst du deine Action dazu verwenden um einen Zauber beenden der auf dir oder einer willigen Kreatur, die du berührst, liegt.
+
+Du kannst dies so oft wie dein Charismabonus es angibt (min 1). Verbrauchte Verwendungen werden nach einer langen Rast wieder aufgefüllt.
+\mysection{\trans{Heilige Schwüre}{Sacred Oaths}}
+<flavor text>
+%\mysubsection{Schwur der Hingabe (Oath of Devotion)}
+
+%\mysubsubsection{Lehren der Hingabe (Tenets of Devotion)}
+
+%\textbf{Aufrichtigkeit (Honesty):} Honesty Honesty Honesty Honesty \\
+
+%\textbf{Tapferkeit (Courage):}Courage Courage Courage Courage Courage Courage \\
+
+%\textbf{Barmherzigkeit (Compassion):} Compassion Compassion Compassion Compassion \\
+
+%\textbf{Ehre (Honor):} Honor \\
+
+%\textbf{Pflicht (Duty):} Duty Duty Duty Duty Duty Duty Duty Duty 
+
+%\mysubsubsection{\trans{Schwurzauber}{Oath Spells}}
+%Du erhälst Schwurzauber zu den aufgeführten Leveln
+%\mysubsubsection{Schwurzauber der Hingabe (Oath of Devotion Spells)}
+
+%\begin{tabular}{c l}
+%3rd  & protection from evil and good, sanctuary \\
+%5th  & lesser restoration, zone of truth \\
+%9th  & beacon of hope, dispel magic \\
+%13th & freedom of movement, guardian of faith \\
+%17th & commune, flame strike
+%\end{tabular}
+%\mysubsubsection{\trans{Gelenkte Göttlichkeiten}{Channel Divinity}}
+%Ab Level 3 erhälst du bei diesem Schwur folgende Optionen.
+%\paragraph*{Geweihte Waffe (Sacred Weapon)}
+
+%\paragraph*{Umkehr des Unheiligen (Turn the Unholy)}
+
+%\mysubsubsection{Aura der Hingabe (Aura of Devotion)}
+
+%\mysubsubsection{Reinheit des Geistes (Purity of Spirit)}
+
+%\mysubsubsection{Heiligenschein (Holy Nimbus)}
+
+%\mysubsection{Schwur der Alten (Oath of the Ancients)}
+
+%\mysubsubsection{Lehren der Alten (Tenets of the Ancients)}
+
+%\textbf{Entzünde das Licht (Kindle the Light):} bla \\
+
+%\textbf{Beschütze das Licht (Shelter the Light):} bla \\
+
+%\textbf{Erhalte dein Licht (Preserve Your Own Light):} bla \\
+
+%\textbf{Sei das Licht (Be the Light):} bla
+
+%\mysubsubsection{\trans{Schwurzauber}{Oath Spells}}
+%Du erhälst Schwurzauber zu den aufgeführten Leveln
+%\mysubsubsection{Schwurzauber der Alten (Oath of the Ancients Spells)}
+
+%\begin{tabular}{c l}
+%3rd  & ensnaring strike, speak with animals \\
+%5th  & moon beam , misty step \\
+%9th  & plant growth, protection from energy \\
+%13th & ice storm , stoneskin \\
+%17th & commune with nature, tree stride
+%\end{tabular}
+%\mysubsubsection{\trans{Gelenkte Göttlichkeiten}{Channel Divinity}}
+%Ab Level 3 erhälst du bei diesem Schwur folgende Optionen.
+%\paragraph*{Zorn der Natur (Nature’s Wrath)}
+
+%\paragraph*{Umkehr der Ungläubigen (Turn the Faithless)}
+
+%\mysubsubsection{Aura der Abwehr (Aura of Warding)}
+
+%\mysubsubsection{Unverwüstliche Wache(Undying Sentinel)}
+
+%\mysubsubsection{Champion der Ältesten (Elder Champion)}
+
+\mysubsection{\trans{Schwur der Vergeltung}{Oath of Vengeance}}
+<flavor text>
+\mysubsubsection{\trans{Lehren der Vergeltung}{Tenets of Vengeance}}
+Die Lehren der Vergeltung variieren von Paladin zu Paladin, jedoch drehen sie sich immer die Bestrafung der Missetäter mit allen nötigen Mitteln. Paladine die sich diese Lehren erhalten sind bereit ihre eigene Rechtschaffenheit zu opfern, um Gerechtigkeit denen zu bringen die Böses tun. Daher sind solche Paladine oft \trans{recht schaffend neutral}{lawful nutral} oder \trans{neutral}{true nutral}. Die Kernprinzipien dieser Lehren sind brutal einfach.
+
+\textbf{\trans{Bekämpfe das größere Böse:}{Fight the Greater Evil}} Mit der Wahl gegen meinem eingeschworenen Feind oder gegen einem kleineren Bösen zu Kämpfen. Wähle ich das Größere Böse.
+
+\textbf{\trans{Keine Gnade den Frevlern:}{No Mercy for the Wicked}} Herkömmliche Feinde mögen meine Gnade spüren, jedoch niemals meine eingeschworenen Feinde. 
+
+\textbf{\trans{Mit allen Mitteln:}{By Any Means Necessary}} Mein Skrupel darf mir nicht im weg stehen meine Feinde auszurotten. 
+
+\textbf{\trans{Rückgabe:}{Restitution}} Wenn meine Feinde die Welt in Schutt und Asche legen ist es nur so weil ich Versagt habe sie aufzuhalten. Nun muss ich denen helfen die durch meine Versäumnisse leiden.
+
+\mysubsubsection{\trans{Schwurzauber}{Oath Spells}}
+Du erhälst Schwurzauber zu den aufgeführten Leveln
+\mysubsubsection{\trans{Schwurzauber der Vergeltung}{Oath of Vengeance Spells}}
+
+\begin{tabular}{c l}
+3.  & \trans{Verderben}{bane}, \trans{Beute}{hunter’s mark} \\
+5.  & \trans{Person binden}{hold person}, \trans{Nebelschritt}{misty step} \\
+9.  & \trans{Hast}{haste}, \trans{Schutz vor Energie}{protection from energy} \\
+13. & \trans{Verbannung}{banishment}, \trans{Dimensionstor}{dimension door} \\
+17. & \trans{Monster binden}{hold monster}, \trans{Wahrsagen}{scrying}
+\end{tabular}
+\mysubsubsection{\trans{Gelenkte Göttlichkeiten}{Channel Divinity}}
+Ab Level 3 erhälst du bei diesem Schwur folgende Optionen.
+\paragraph*{\trans{Feind abschwören}{Abjure Enemy}}
+Als Aktion präsentierst du dein Heiliges Symbol und sprichst ein Gebet der Anklage. Wähle eine Kreatur in \trans{20m}{60 feet} Reichweite das du sehen kannst. Diese Kreatur muss einen Weisheitsrettungswurf machen, sofern es nicht immun gegen \trans{verängstigen}{frightened}. \trans{Teufel}{Fiends} und \trans{Untote}{undead} haben einen \trans{Nachteil}{disadvantage}.
+
+Misslingt der wurf ist die Kreatur für 1min oder bis sie Schaden erleidet \trans{verängstigt}{frightened}. Währenddessen sinkt die Geschwindigkeit der Kreatur auf 0 und kann nicht von Geschwindigkeitsboni profitieren.
+
+Wenn der Wurf gelingt ist die Geschwindigkeit der Kreatur halbiert für 1min oder bis sie Schaden erleidet.
+\paragraph*{\trans{Schwur der Feindschaft}{Vow of Enmity}}
+Als Bonusaktion kannst du den Schwur der Feindschaft, gegen eine Kreatur in \trans{3,3m}{1 feet} das du sehen kannst, sprechen. Du erhältst \trans{Vorteile}{advantage} für Angriffswürfe gegen diese Kreatur für 1min oder bis die Hit points dieser auf 0 sinknen oder es das Bewusstsein verliert.
+\mysubsubsection{\trans{Unbarmherziger Rächer}{Relentless Avenger}}
+
+\mysubsubsection{\trans{Seele der Vergeltung}{Soul of Vengeance}}
+
+\mysubsubsection{\trans{Racheengel}{Avenging Angel}}
+
+\end{document}

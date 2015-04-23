@@ -1,0 +1,5 @@
+[0] Config.pm:318> INFO - This is Biber 1.8
+[0] Config.pm:321> INFO - Logfile is 'Paladin.blg'
+[67] biber:275> INFO - === Mon Feb 16, 2015, 17:20:12
+[67] Biber.pm:333> INFO - Reading 'Paladin.bcf'
+[132] Utils.pm:169> WARN - No data sources defined!
